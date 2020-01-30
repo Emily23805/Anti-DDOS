@@ -313,7 +313,7 @@ $IPTABLES -A OUTPUT -m state --state NEW -p tcp --dport 53 -j ACCEPT
 $IPTABLES -A OUTPUT -m state --state NEW -p tcp --dport 80 -j ACCEPT
 
 # Allow outgoing HTTPS requests.
-$IPTABLES -A OUTPUT -m state --state NEW -p tcp --dport 443 -j ACCEPT
+$IPTABLES -A OUTPUT -m state --state NEW -p tcp --dport 25565 -j ACCEPT
 
 # Allow outgoing SMTPS requests. Do NOT allow unencrypted SMTP!
 # $IPTABLES -A OUTPUT -m state --state NEW -p tcp --dport 465 -j ACCEPT
